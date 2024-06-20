@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <p class="fs-1 text-center">Add new car</p>
+    <div class="container shadow-lg p-3 mb-5 bg-body-tertiary rounded mt-4">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock %}
