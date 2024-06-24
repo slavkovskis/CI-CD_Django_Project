@@ -10,6 +10,6 @@ RUN pip install -r requirements.txt
 
 COPY carProject/ /app/
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000
 
 #CMD ["bash", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8000 & sleep infinity"]
