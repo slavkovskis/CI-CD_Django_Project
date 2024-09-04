@@ -1,3 +1,3 @@
 # KIII_project
  
-Project for CI/CD
+Project for CI/CD with a fully funcioning Django app
